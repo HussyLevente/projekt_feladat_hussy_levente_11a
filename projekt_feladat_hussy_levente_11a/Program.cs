@@ -95,10 +95,10 @@ else if (ValasztottSzam == 4) //Ha a felhasználó osztásos feladatokat szeretn
 {
     for (int i = 0; i < 10; i++)
     {
-        int Osztas1 = rnd.Next(2, 101);
-        int Osztas2 = rnd.Next(2, 101);
+        double Osztas1 = rnd.Next(2, 101);
+        double Osztas2 = rnd.Next(2, 101);
         Console.Write($"{i + 1}. {Osztas1} / {Osztas2} = ");
-        int OsztasMGLDS = int.Parse(Console.ReadLine());
+        double OsztasMGLDS = double.Parse(Console.ReadLine());
         if (OsztasMGLDS == Osztas1 / Osztas2)
         {
             Console.ForegroundColor = ConsoleColor.Green;
